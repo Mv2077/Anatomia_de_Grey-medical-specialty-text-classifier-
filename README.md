@@ -1,9 +1,12 @@
 # 🧠 Medical Specialty Text Classifier
 
-## 📄 Overview
-This project implements a **medical specialty classification system** based on **patient descriptions** using Natural Language Processing (NLP).
+##How to run
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1KEkmrANIn5rIWcg7N5m-9jTzYsWEW7OQ)
 
-Given a short textual description of a patient's symptoms, the system predicts the most likely **medical specialty**, such as Orthopedics, Cardiology, Neurology, etc.
+## 📄 Overview
+This project implements a **medical specialty classification system** using Natural Language Processing (NLP).
+
+Given a **patient description** (not a full medical transcription), the system predicts the most likely **medical specialty** such as Orthopedics, Cardiology, Neurology, Psychiatry, etc.
 
 ---
 
@@ -11,59 +14,53 @@ Given a short textual description of a patient's symptoms, the system predicts t
 - **Source:** Hugging Face  
   `hpe-ai/medical-cases-classification-tutorial`
 - **Input:** Cleaned patient descriptions
-- **Target:** Medical specialty (13 classes)
+- **Output:** Medical specialty (13 classes)
 
 ---
 
 ## 🧹 Data Preparation
-- Text lowercasing  
+- Lowercasing  
 - Special character removal  
 - Stopword removal  
 - Lemmatization (NLTK)  
 - Label encoding  
-- Class balancing to reduce bias  
+- Class balancing  
 
 ---
 
 ## 🤖 Models
-The project compares multiple NLP models:
+The project compares several models:
 
 - Naive Bayes  
 - Logistic Regression  
 - DistilBERT  
 - ModernBERT  
-- GPT-2 (experimental classification)
+- GPT-2 (experimental)
 
-Each model is trained, saved, and evaluated independently.
+Each model is trained and evaluated independently.
 
 ---
 
 ## 📈 Evaluation
 Models are evaluated using:
-- Accuracy  
 - Precision  
 - Recall  
 - F1-score  
 
-A unified evaluation pipeline allows direct comparison between models.
+A unified evaluation pipeline enables fair comparison across models.
 
 ---
 
 ## 🚀 Deployment
 The best-performing model (**ModernBERT**) is deployed using **Streamlit**, allowing users to:
 - Input a patient description
-- Receive a predicted medical specialty
+- Receive the predicted medical specialty
 - View a confidence score
 
 ---
 
 ## 🛠️ Tech Stack
-- Python  
-- PyTorch  
-- Hugging Face Transformers  
-- Scikit-learn  
-- NLTK  
-- Streamlit  
+Python · PyTorch · Hugging Face · Scikit-learn · NLTK · Streamlit
 
 ---
 
