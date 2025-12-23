@@ -1,6 +1,6 @@
 # 🧠 Medical Specialty Text Classifier
 
-##How to run
+## How to run
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1KEkmrANIn5rIWcg7N5m-9jTzYsWEW7OQ)
 
 ## 📄 Overview
